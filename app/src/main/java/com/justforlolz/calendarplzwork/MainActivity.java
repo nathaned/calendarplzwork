@@ -3,6 +3,7 @@ package com.justforlolz.calendarplzwork;
 import android.app.Activity;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,7 +21,7 @@ import java.util.List;
  * Created by Raquib-ul-Alam Kanak on 7/21/2014.
  * Website: http://april-shower.com
  */
-public class MainActivity extends Activity implements WeekView.MonthChangeListener,
+public class MainActivity extends ActionBarActivity implements WeekView.MonthChangeListener,
         WeekView.EventClickListener, WeekView.EventLongPressListener {
 
     private static final int TYPE_DAY_VIEW = 1;
@@ -61,6 +62,9 @@ public class MainActivity extends Activity implements WeekView.MonthChangeListen
         switch (id){
             case R.id.action_today:
                 mWeekView.goToToday();
+                return true;
+            case R.id.action_add:
+                //launch add activity
                 return true;
             case R.id.action_day_view:
                 if (mWeekViewType != TYPE_DAY_VIEW) {
