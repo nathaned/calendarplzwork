@@ -1,12 +1,14 @@
 package com.justforlolz.calendarplzwork;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.RectF;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.alamkanak.weekview.WeekView;
@@ -47,6 +49,9 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
 
         // Set long press listener for events.
         mWeekView.setEventLongPressListener(this);
+
+        //ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        //imageView.setImageResource(R.drawable.ic_launcher);
     }
 
 
@@ -64,7 +69,8 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
                 mWeekView.goToToday();
                 return true;
             case R.id.action_add:
-                //launch add activity
+                Intent intent = new Intent(this, AddEvent.class);
+                startActivity(intent);
                 return true;
             case R.id.action_day_view:
                 if (mWeekViewType != TYPE_DAY_VIEW) {
