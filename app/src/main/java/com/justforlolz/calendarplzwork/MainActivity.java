@@ -2,8 +2,10 @@ package com.justforlolz.calendarplzwork;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -31,6 +33,7 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
     private static final int TYPE_WEEK_VIEW = 3;
     private int mWeekViewType = TYPE_THREE_DAY_VIEW;
     private WeekView mWeekView;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,8 +119,26 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
     @Override
     public List<WeekViewEvent> onMonthChange(int newYear, int newMonth) {
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         // Populate the week view with some events.
         List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
+
+        int addedNum = Integer.parseInt(prefs.getString("Num", ""));
+        for(int i=0; i<addedNum; i++)
+        {
+            String fullPref = prefs.getString(""+i,"");
+            String[] split = fullPref.split(" ");
+            //public final void set (int year, int month, int day, int hourOfDay, int minute)
+            Calendar startTime = Calendar.getInstance();
+            startTime.set(Integer.parseInt(split[0]), Integer.parseInt(split[1]), Integer.parseInt(split[2]), Integer.parseInt(split[3]), Integer.parseInt(split[4]));
+
+            Calendar endTime = (Calendar) startTime.clone();
+            endTime.add(Calendar.HOUR, startTime.getTime().getHours()+1);
+            WeekViewEvent event = new WeekViewEvent(i, split[5], startTime, endTime);
+            events.add(event);
+
+        }
 
         Calendar startTime = Calendar.getInstance();
         startTime.set(Calendar.HOUR_OF_DAY, 3);
