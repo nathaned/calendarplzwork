@@ -35,4 +35,6 @@ Members:
 * JR Houston
 * Noah Al-Shihabi
  
-#NO FORCE CLOSES IN APP IN OUR TESTING
+#We couldn't find a way to make the app crash. App runs smoothly and is stable.
+
+Thank you!
