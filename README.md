@@ -1,5 +1,6 @@
 #EDGEWOOD FBLA MOBILE APPLICATION
 
+![](images/superschoolcalendaricon.png)
 This is a super neat app that allows you to add calendar events and view them in a nice way.
 We built this app with the user in mind to create an experience that is simple yet elegant.
 
