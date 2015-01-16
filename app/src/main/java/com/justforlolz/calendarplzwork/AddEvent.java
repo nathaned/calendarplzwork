@@ -103,7 +103,7 @@ public class AddEvent extends ActionBarActivity {
         String[] split = fullPref.split(" ");
         // public final void set (int year, int month, int day, int hourOfDay, int minute)
         Calendar startTime = Calendar.getInstance();
-        TextView show = (TextView) findViewById(R.id.textView5);
+        //TextView show = (TextView) findViewById(R.id.textView5);
         //show.setText(title + " " + Integer.parseInt(split[0]) + " " + Integer.parseInt(split[1]) + " " + Integer.parseInt(split[2]) +
           //        " " + Integer.parseInt(split[3]) + " " + Integer.parseInt(split[4]));
         //show.setText(prefs.getString("Num", "nope") + "   " + prefs.getString("31", "nah"));
