@@ -17,7 +17,8 @@ Screenshots
 ------------
 Below are a few screenshots to see how the app looks. The app is modeled for Android API 19+. The phone used to capture the screenshots is a Motorola Droid Maxx, running Android 4.4.4 KitKat. 
 We have also tested the application on an emulated device running Android 5.0 Lolipop.
-This application 
+
+ 
 ![](images/basicScreen.png)
 ![](images/weekkkk.png)
 ![](images/oneDay.png)
