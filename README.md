@@ -34,3 +34,5 @@ Members:
 * Nathan Dabu
 * JR Houston
 * Noah Al-Shihabi
+ 
+#NO FORCE CLOSES IN APP IN OUR TESTING
