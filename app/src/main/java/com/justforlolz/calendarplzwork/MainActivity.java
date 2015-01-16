@@ -124,7 +124,7 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
         // Populate the week view with some events.
         List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
 
-        int addedNum = Integer.parseInt(prefs.getString("Num", ""));
+        int addedNum = Integer.parseInt(prefs.getString("Num", "0"));
         for(int i=0; i<addedNum; i++)
         {
             String fullPref = prefs.getString(""+i,"");
