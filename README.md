@@ -27,7 +27,7 @@ This application
 ![](images/trainstrainstrains.png)
 
 
-Additional Informaiton
+Additional Information
 ------------
 3 member group project from Edgewood Jr./Sr. High School
 Members:
