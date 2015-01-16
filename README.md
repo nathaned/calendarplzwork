@@ -1,6 +1,7 @@
 #EDGEWOOD FBLA MOBILE APPLICATION
 
 This is a super neat app that allows you to add calendar events and view them in a nice way.
+We built this app with the user in mind to create an experience that is simple yet elegant.
 
 How to Use It
 ------------
@@ -10,6 +11,13 @@ You can add an event by clicking on the add event button on the action bar. The 
 
 By pressing the back hardware button, you can return to the calendar and see the event you added!
 
+
+
+Screenshots
+------------
+Below are a few screenshots to see how the app looks. The app is modeled for Android API 19+. The phone used to capture the screenshots is a Motorola Droid Maxx, running Android 4.4.4 KitKat. 
+We have also tested the application on an emulated device running Android 5.0 Lolipop.
+This application 
 ![](images/basicScreen.png)
 ![](images/weekkkk.png)
 ![](images/oneDay.png)
@@ -17,3 +25,12 @@ By pressing the back hardware button, you can return to the calendar and see the
 ![](images/trains.png)
 ![](images/trainsAdded.png)
 ![](images/trainstrainstrains.png)
+
+
+Additional Informaiton
+------------
+3 member group project from Edgewood Jr./Sr. High School
+Members:
+* Nathan Dabu
+* JR Houston
+* Noah Al-Shihabi
